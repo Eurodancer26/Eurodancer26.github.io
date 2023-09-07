@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.calculator {
+    width: 320px;
+    min-width: 280px;
+    min-height: 500px;
+    background: #000;
+    border-radius: 5px;
+    margin: 40px auto;
+    padding: 0 0 10px 0;
+    margin: 0 10px 0 10px;
+}
+.lable {
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 30px;
+    border-bottom: 5px rgb(39, 38, 38) solid;
+}
+.lable input {
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    width: 90%;
+    border: 0;
+    outline: 0;
+}
+.buttons {
+    display: grid;
+    color: #000;
+    grid-template: repeat(5, 70px) / repeat(4, 70px);
+    gap: 8px;
+    padding: 8px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 236, 112);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn:active {
+    border: 5px #313131 solid;
+    font-size: 25px;
+}
+.btn:first-child {
+    background-color: red;
+    color: #fff;
+}
+[id="."], [id="0"], [id="1"], [id="2"], [id="3"], [id="4"], [id="5"], [id="6"], [id="7"], [id="8"], [id="9"] {
+    background-color: #fff;
+}
+[data-value="0"] {
+    grid-column: 1/3;
+}

@@ -1,0 +1,8 @@
+.header__overlay {
+    visibility: hidden;
+    opacity: 0;
+    &_active {
+        visibility: visible;
+        opacity: 0.6;
+    }
+}

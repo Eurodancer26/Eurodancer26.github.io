@@ -1,0 +1,20 @@
+.about {
+    padding-top: 120px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 108px 120px 108px;
+    }
+    &__title {
+        width: 554px;
+        text-align: left;
+    }
+    &__text {
+        max-width: 496px;
+        text-align: left;
+    }
+    &__divider {
+        padding: 0 108px 0 108px;
+        margin: 0 auto;
+    }
+}

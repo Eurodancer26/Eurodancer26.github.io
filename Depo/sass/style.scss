@@ -1,0 +1,42 @@
+@import 'libs/bootstrap-reboot.min.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('./TTFirsNeue-Medium.eot');
+    src: local('TT Firs Neue Medium'), local('TTFirsNeue-Medium'),
+        url('./TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+        url('../fonts/TTFirsNeue-Medium.woff') format('woff'),
+        url('../fonts/TTFirsNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+* {
+    font-family: 'TT Firs Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+@import 'state/state.scss';
+@import 'components/components.scss';
+@import 'blocks/header/header.scss';
+@import 'blocks/home/home.scss';
+@import 'blocks/about/about.scss';
+@import 'blocks/steps/steps.scss';
+@import 'blocks/countries/countries.scss';
+@import 'blocks/faq/faq.scss';
+@import 'blocks/digital-services/services.scss';
+@import 'blocks/media.scss';

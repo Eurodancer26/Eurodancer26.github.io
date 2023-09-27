@@ -1,0 +1,220 @@
+// 728px
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .home {
+        padding-top: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+        &__wrap {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img {
+            padding-bottom: 0;
+            &-form {
+                top: 0;
+            }
+            &-widget {
+                animation-play-state: paused;
+            }
+        }
+        &__offer {
+            width: 677px;
+            padding-top: 32px;
+            &-title {
+                width: 100%;
+                text-align: center;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 56px;
+                padding-bottom: 32px;
+            }
+            &-button {
+                display: block;
+                margin: 0 auto;
+            }
+            &-clipboard {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__footer {
+            padding-top: 30px;
+            padding-bottom: 18px;
+            align-items: center;
+        }
+        &__socials {
+            margin-bottom: 0px;
+        }
+    }
+    .modal {
+        overflow-y: scroll;
+    }
+    .popup-form {
+        overflow-y: scroll;
+    }
+    .finally {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+        padding: 0 16px;
+    }
+    .home {
+        padding-top: 32px;
+        padding-bottom: 120px;
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__offer {
+            width: 288px;
+            margin-bottom: 60px;
+            &-title {
+                font-size: 32px;
+                line-height: 40px;
+                padding-bottom: 24px;
+            }
+            &-button {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+            &-clipboard {
+                width: 239px;
+                margin: 24px auto 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-img {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                        vertical-align: top;
+                    }
+                }
+                &-text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &__img {
+            top: 30px;
+            min-width: 288px;
+            &-form {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__footer {
+            display: none;
+        }
+    }
+    .modal {
+        &-content {
+            width: 288px;
+            padding: 24px;
+            
+        }
+        &-dialog {
+            padding: 136px 16px;
+        }
+        &-body {
+            
+            h2 {
+                width: 188px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 24px;
+            }
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+    .popup-form {
+        input {
+            margin-bottom: 16px;
+        }
+        &-content {
+            min-width: 288px;
+            padding: 24px;
+            
+        }
+        &-dialog {
+            padding: 64px 16px;
+        }
+        &-body {
+            
+            h2 {
+                width: 188px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            input {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__select-wrap {
+            margin-bottom: 16px;
+        }
+        &__btn {
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .finally {
+        &-content {
+            min-width: 288px;
+            padding: 24px;
+            
+        }
+        &-dialog {
+            padding: 64px 16px;
+        }
+        &-body {
+            h2 {
+                width: 188px;
+                margin: 0 auto;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                width: 100%;
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+        }
+        &__circle-big {
+            width: 64px;
+            height: 64px;
+            svg {
+                width: 29px;
+                height: 29px;
+            }
+        }
+        &__text-content {
+            max-width: 240px;
+        }
+        &__btn {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

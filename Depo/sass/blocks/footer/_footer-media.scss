@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .footer {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__copyright {
+            padding-bottom: 24px;
+        }
+        &__links {
+            padding-bottom: 24px;
+        }
+        &__socials {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                padding: 0 0 16px 0;
+            }
+            &-icon {
+                margin-left: 32px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 680px;
+    }
+    .faq {
+        padding-top: 80px;
+        &__content {
+            flex-direction: column;
+            padding: 0;
+        }
+        &__title {
+            max-width: 680px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 64px;
+            p {
+                width: 240px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+    .faq {
+        padding-top: 32px;
+        &__content {
+            flex-direction: column;
+            padding: 0;
+        }
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            padding-bottom: 24px;
+            text-align: left;
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+                padding-bottom: 16px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &__inner {
+            padding: 24px 0 24px 0;
+        }
+        &__accordion {
+            width: 240px;
+            font-size: 16px;
+            line-height: 24px;
+            &:after {
+                right: calc(-100% - (-85%));
+                
+            }
+        }
+        &__panel {
+            p {
+                font-size: 14px;
+            }
+        }
+        
+    }
+        
+    
+}
